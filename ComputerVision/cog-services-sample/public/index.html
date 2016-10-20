@@ -1,0 +1,32 @@
+<html>
+<meta name="viewport" content="maximum-scale=1, user-scalable=no">
+<head>
+    <title>Super Smart Hashtag App</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--View full site at http://intelligentapp.azurewebsites.net-->
+    
+    <div id="container">
+        <img src="https://cdn117.picsart.com/213689042000202.jpg" id="imageinput" class="img-rounded"> 
+        <p id="description"></p>
+          <p id="response">#balloon, #aircraft, #transport, #sky, #different, #colored, #several</p>   
+           <input type="url" placeholder="Paste a valid image URL" id="imgURL">
+           <button class="btnTag btn-default btn-sm" onclick="tagImage()">Tag Image</button>
+    
+           <p>Supported image formats: JPEG, PNG, GIF, BMP.<br>
+            Image file size: Less than 4MB.<br>
+            Image dimension: Greater than 50 x 50 pixels.</p>
+
+    <div id="btmBar"><p>Powered by <img src="img/microsoftLogo.png" width="10%"> <a href="https://www.microsoft.com/cognitive-services">Cognitive Services</a>
+    <br> Access this sample and more on <a href="https://github.com/TED-Social/CognitiveServices-Samples">GitHub </a>
+    </p></div>
+    </div>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/intelligentapp.js"></script>
+
+</body>
+</html>
