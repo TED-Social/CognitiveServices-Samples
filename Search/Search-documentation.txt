@@ -1,0 +1,13 @@
+The Search APIs provide access to the search technology that power Bing.com and a long list of 1st-party (Office, Cortana, Xbox, Edge) and 3rd-party (AOL, Apple, Amazon, Yahoo etc.) partners. 
+In total, we have 4 Search APIs for web, image, video and news search. 
+In addition we provide access to our Autosuggest (type-ahead) and Spell Check services. 
+
+Bing Web Search API: is the main Search API. 
+With one programmatic call, the user can get back relevant webpage, image, video, and news results. 
+It's equivalent to searching in the web vertical in bing.com. 
+The Search APIs provide the power of the Bing Search engine to developers. 
+You get access to many of the latest and greatest capabilities the bing.com site has to offer, in the form of an API. 
+It's the same architecture stack so it's a powerful way to bring the knowledge and intelligence of the search engine to your own experience. 
+The API is built directly on top of the entire Bing stack- you get the quality, relevance, performance and continuous improvements that the rest of the site gets. 
+Similar to Bing.com- tail queries, or obscure terms may have limited results. 
+We're always working to improve the edge cases though and API users will benefit from that. 

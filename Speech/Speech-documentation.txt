@@ -1,0 +1,40 @@
+Speech APIs provide state-of-the-art algorithms to process spoken language powered by Bing. 
+This also includes speech synthesis for a subset of languages supported by speech recognition. 
+With these APIs developers can easily include the ability to add speech driven actions into their applications. 
+In certain cases, the APIs allow for real-time interaction with the user as well.  
+Additional capabilities include voice recognition and speaker identification as well as providing partial transcription, meaning that for supported languages the developer can get partial results before the user has finished speaking. 
+The initial release supports 7 languages.
+
+Bing Speech API
+
+CRIS
+The Custom Recognition Intelligent Service (CRIS) enables you to create customized language models and acoustic models tailored to your application and your users. 
+By uploading speech and/or text data to CRIS that reflects your application and your users, you can create custom models that can be used in conjunction with Microsoft’s existing state-of-the-art speech models. 
+To customize the acoustic model to a particular domain, a collection of speech data is required. 
+This collection consists of a set of audio files of speech data, and a text file of transcriptions of each audio file. 
+The audio data should be representative of the scenario in which you would like to use the recognizer. 
+If you were building an app to search MSDN by voice, it’s likely that terms like “object-oriented” or “namespace” or “dot net” will appear more frequently than in typical voice applications. 
+Customizing the language model will enable the system to learn this. 
+CRIS uses acoustic or language model adaptation to enable the speech recognizer to learn the characteristics of the customer’s data while still getting the benefits of all the data and expertise that went into creating the base models that power the Speech API. 
+
+For acoustic model adaptation, the technology is described in this paper:
+http://research.microsoft.com/pubs/194346/0007893.pdf 
+Works well when the data is uploaded to CRIS is truly representative of the user population and the expected usage of the application. 
+For language model adaptation, it works best when the data uploaded reflects what people would actually say.
+Uploading simply a list of new terms is better than nothing but will not be as effective.  
+For acoustic model adaptation, if you want to adapt to elderly speech, you need to upload the speech from many different elderly users, not just one or two. 
+If you upload just one person’s voice, CRIS will learn to do a great job on that voice but will not necessarily learn to generalize to other elderly voices. 
+Similarly, if you want to adapt to a new environment, like a factory, you should upload speech data from many speakers in the factory, not just one.
+
+Speaker Recognition API
+Microsoft's state-of-the-art cloud-based speaker recognition algorithms to recognize a human's voice in audio streams. 
+It comprises two components: speaker verification and speaker identification. 
+Speaker Verification can automatically verify and authenticate users from their voice or speech. 
+It is tightly related to authentication scenarios and is often associated with a pass phrase. 
+Hence, we opt for text-dependent approach, which means speakers need to choose a specific pass phrase to use during both enrollment and verification phases. 
+Speaker Identification can automatically identify the person speaking in an audio file given a group of prospective speakers. 
+The input audio is paired against the provided group of speakers, and in case there is a match found, the speaker’s identity is returned. 
+It is text-independent, which means that there are no restrictions on what the speaker says during the enrollment and recognition phases.  
+A use case is biometric authentication using voice. 
+https://blogs.technet.microsoft.com/machinelearning/2015/12/14/now-available-speaker-video-apis-from-microsoft-project-oxford/ 
+We also have SDKs available for Speaker Reco

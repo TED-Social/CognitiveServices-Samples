@@ -1,0 +1,40 @@
+Recommendations API
+Here are a bunch of Knowledge APIs. 
+Go to www.microsoft.com/cognitive and select the <Knowledge> dropdown to see what's available
+
+There’s a huge amount of power available to you’re here, but we’re going to focus on our Recommendation API as it feels like that’s something that could really spark some creativity at the hack this week. 
+Let’s take a look at the Recommendations UI, currently in beta. 
+
+First, you’ll need to sign up for a Recommendations Account Key – go here https://go.microsoft.com/fwlink/?LinkID=761106 and sign in with your Microsoft account. 
+You’ll then create a new Cognitive Service account, and use the generated keys for the API setup in your code.
+
+Academic Knowledge API
+The Academic Knowledge API enable developers to interpret user queries for academic intent and retrieve rich entity information about research papers, authors, journals, conferences, and universities from the Microsoft Academic Graph (MAG). 
+1. Developers can use this API to build search features such as the knowledge-based query auto-suggest and search results at  http://academic.microsoft.com.  
+2. Universities can retrieve analytics data about their researchers' publications, topics, and venues. 
+3. Conference organizers can analyze the citation patterns of their conference papers. 
+4. Data scientists and computer science researchers can develop new ranking and analysis approaches over a large heterogeneous network. 
+
+A publication about our approach can be found here: http://research.microsoft.com/apps/pubs/default.aspx?id=246609  
+The underlying data graph (Microsoft Academic Graph) is constructed over discovered academic papers on the web. 
+The data is largely unstructured, of variable quality, and ambiguous.  
+We are constantly working to improve this data quality and to correctly aggregate the multiple instances of authors, papers, etc. into a single representative entity in the graph.        
+
+Knowledge Exploration Service API
+Enable interactive search experience over structured data via natural language.  
+Indexes customer's structured data (BYOD) with support for prefix completion.  
+Generates annotated interpretations/completions of natural language queries. 
+Publishers/libraries can use this to create interactive search over their publications similar to academic.microsoft.com.  
+Merchants can create interactive search experience to help users find and discover products.  
+Data owners can create systems that answer natural language user questions. 
+It works best when the structured data is clean and the natural language structure is simple and predictable.  
+Otherwise, customers will have to invest a bit of work to generate the structured data and author the grammar.  
+We are working on future components to simplify both authoring aspects. 
+
+Entity Linking Service API
+Given a specific paragraph of text within a document, the Entity Linking will recognize and identify each separate entity based on the context and linking the entity to wikipedia. 
+Use cases: A news agency would use this to analysis their news article to create relations between articles, a news agency would use this to generate tags for article and make recommendation for reader, a company would use this to track the PR articles mentioned it and product comments to track customer feedback. 
+We also have SDKs available for Entity Linking.
+
+
+ 

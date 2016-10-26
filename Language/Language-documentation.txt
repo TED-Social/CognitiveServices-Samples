@@ -1,0 +1,72 @@
+• LUIS (Language Understanding Intelligent Service): https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis
+• Bing Spell Check https://www.microsoft.com/cognitive-services/en-us/bing-spell-check-api
+• Web Language Model https://www.microsoft.com/cognitive-services/en-us/web-language-model-api
+• Linguistics Analysis https://www.microsoft.com/cognitive-services/en-us/linguistic-analysis-api
+• Text Analytics https://www.microsoft.com/cognitive-services/en-us/text-analytics-api
+
+LUIS
+Language Understanding Intelligent Service (LUIS) allows developers to build a model that understands natural language and commands tailored to their application.  
+Example: You can say “turn down the thermostat in the living room,” send it to a LUIS model, and instead of just returning the text that represents what was said, LUIS will return: the action is “turn down,” the location is “living room,” and the target is “thermostat.” 
+LUIS allows developers to iteratively build on these models and take speech or text input and return a structured representation of what the person said.  
+Not only that but by build LUIS will help developers create and  train smart conversational bot (Intercom or Slack) with a single button.  
+LUIS will also offer action fulfillment capabilities by simple integration with webhooks. LUIS works pretty well it comes to intents. 
+For the entities, the learning curve is slower especially when the number of entities increases. LUIS only supports 20 intents & 10 entities yet by build each entities can have up to 10 children. 
+
+Bing Spell Check API
+Microsoft’s state-of-the-art cloud-based spelling algorithms to detect a wide variety of spelling errors and provide accurate suggestions. 
+Using Bing Spell Check, your mobile and PC apps will be powered with state-of-the-art spelling capabilities. 
+Our service is trained on a massive corpus of data gleaned from billions of web pages.  There is no need to train your own models.  
+The speller model is updated regularly and incorporates new terms and brands almost as quickly as they appear on the web. 
+This API is available through Microsoft Cognitive Services for customers with low-volume and high-latency jobs.  
+
+Use cases: 
+1) Improve the quality of a website's product search 
+2) provide spell correction for a keyboard app 
+3) provide spell correction for text fields in an app or web page 
+4) detect errors in UI text and user data. 
+
+See https://blogs.msdn.microsoft.com/msr_er/2010/12/15/building-a-better-speller-bing-and-microsoft-research-offer-prizes-for-best-search-engine-spelling-alteration-services/  
+The speller is exceptional at common spelling errors with low edit-distance (such as febuary->February) but a lot of other spellers are good at that as well.  
+We Do a very good job with word breaking, proper names in context (try "director stephen spielberg") and fictional character names, just a few examples.  
+Areas that are a challenge are capitalization (we don't know what to do with "March" for example, even with context) and consistency (there are times when we will flag a word only intermittently based on the context).
+
+Web Language Model API
+Web Language API indexes the web and Bing queries to allow users to calculate the probabilities of natural language expressions and estimate a list of most likely words to follow an existing sequence of words. 
+Use this API to insert spaces into a string of words without spaces, like a hashtag or URL.  
+Use this API to rerank machine translation/speech recognition candidate sentences based on probability of the sentence.  
+Use this API for academic research. http://research.microsoft.com/apps/pubs/default.aspx?id=130762 
+We also have SDKs available for WebLM
+
+Linguistic Analysis API
+The Linguistic Analysis API helps you gain insights from text. 
+Given a natural language parse, it’s easy to identify the concepts and entities (noun phrases), actions (verbs and verb phrases), descriptive words, and more. 
+The processed text can provide useful features for classification tasks such as sentiment analysis. 
+We also have SDKs available for Linguistic Analysis.
+
+
+Text Analytics API
+Detect sentiment, key phrases, topics, and language from your text. 
+
+Sentiment analysis
+The API returns a numeric score between 0 and 1. 
+Scores close to 1 indicate positive sentiment and scores close to 0 indicate negative sentiment. 
+Sentiment score is generated using classification techniques. 
+The input features of the classifier include n-grams, features generated from part-of-speech tags, and word embeddings. 
+English, French, Spanish and Portuguese text are supported.
+
+Key phrase extraction
+The API returns a list of strings denoting the key talking points in the input text. 
+We employ techniques from Microsoft Office's sophisticated Natural Language Processing toolkit. 
+English, German, Spanish, and Japanese text are supported.
+
+Topic detection
+This is a newly released API that returns the detected topics for a list of submitted text records. 
+A topic is identified with a key phrase, which can be one or more related words. 
+This API requires a minimum of 100 text records to be submitted, but is designed to detect topics across hundreds to thousands of records. 
+Note that this API charges 1 transaction per text record submitted. 
+The API is designed to work well for short, human-written text such as reviews and user feedback.
+
+Language detection
+The API returns the detected language and a numeric score between 0 and 1. 
+Scores close to 1 indicate 100% certainty that the identified language is true. 
+A total of 120 languages are supported.
