@@ -1,0 +1,3 @@
+Go to: https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk for Emotion sample code
+
+The Intelligent Kiosk Sample is a collection of demos showcasing workflows and experiences built on top of the Microsoft Cognitive Services. Most of the experiences are hands-free and autonomous, using the human faces in front of a web camera as the main form of input (thus the word "kiosk" in the name).
