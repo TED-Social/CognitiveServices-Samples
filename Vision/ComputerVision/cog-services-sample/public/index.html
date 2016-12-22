@@ -7,13 +7,21 @@
 </head>
 <body>
     <div id="container">
-        <img src="https://cdn113.picsart.com/214670821003202.jpg" id="imageinput" class="img-rounded"> 
-        <p id="description">There is a female wearing sunglasses. She looks 24.1 and is not smiling.</p>
-          <p id="response">#sky, #person, #outdoor, #scene</p>
-         Dominant color: <div class="colorBlock" id="dominantColor" style="background:black;"></div>
-         Background color: <div class="colorBlock" id="bgColor" style="background:blue;"></div>
-         Accent color: <div class="colorBlock" id="accentColor" style="background:white;"></div>
-           <input type="url" placeholder="Paste a valid image URL" id="imgURL">
+        <!--fake the original content, though if you use this image you will get the same results from services, just quick way to set up without calling tagImage onload -->
+        <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/13177469_10208342195210729_2534582625305650918_n.jpg?oh=26311bf3e9aa4f22f9cc6591844a7644&oe=58EFEB41" id="imageinput" class="img-rounded"> 
+        <p id="description">There is a 32.6 female wearing reading glasses showing happiness. <br> There is a 24.5 female wearing sunglasses showing happiness.  </p>
+           <p id="emotion"></p>
+          <p id="response">#sky, #outdoor, #water, #person, #boat, #lake, #posing, #shore, #day</p>
+        <div>
+            <div style="display: inline-block;">Dominant color:</div> <div class="colorBlock" id="dominantColor" style="background:black; display:inline-block;"></div>
+        </div>
+        <div> 
+            <div style="display: inline-block;">Background color:</div> <div class="colorBlock" id="bgColor" style="background:blue;display:inline-block;"></div>
+        </div>
+        <div> 
+            <div style="display: inline-block;">Accent color:</div> <div class="colorBlock" id="accentColor" style="background: white;display:inline-block;"></div>
+        </div>
+           <input type="url" placeholder="Paste a valid image URL" id="imgURL" value="https://cdn114.picsart.com/214662062001202.jpg">
            <button class="btnTag btn-default btn-sm" onclick="tagImage()">Tag Image</button>
            <p>Supported image formats: JPEG, PNG, GIF, BMP.<br>
             Image file size: Less than 4MB.<br>
