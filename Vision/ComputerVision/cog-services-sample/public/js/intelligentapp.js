@@ -28,7 +28,7 @@ $.when( //chain events for Emotion and Face matching
             beforeSend: function(xhrObj){
                 // Request headers
                 xhrObj.setRequestHeader("Content-Type","application/json");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","835c52aa7e434a7f817a93fe7b440b4d");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","{your key here}");
             },
             type: "POST",
             // Request body
@@ -47,7 +47,7 @@ $.when( //chain events for Emotion and Face matching
             url: "https://api.projectoxford.ai/vision/v1.0/analyze?" + $.param(paramsDesc),      
             beforeSend: function (xhrObj) {
             xhrObj.setRequestHeader("Content-Type", "application/json");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "1509752abed946fe8d21cc1d998286d5");
+            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "{your key here}");
             },
             type: "POST",
             data: "{'url':'" + imgURL+ "'}",
@@ -81,7 +81,7 @@ $.when( //chain events for Emotion and Face matching
             url: "https://api.projectoxford.ai/face/v1.0/detect?" + $.param(paramsFace),  
             beforeSend: function (xhrObj) {
             xhrObj.setRequestHeader("Content-Type", "application/json");
-            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "02fa0b4d321a486dbb4c29c3ee25ad2d");
+            xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "{your key here}");
             },
             type: "POST",
             data: "{'url':'" + imgURL+ "'}",
