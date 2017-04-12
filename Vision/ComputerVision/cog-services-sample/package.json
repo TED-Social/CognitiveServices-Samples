@@ -1,7 +1,7 @@
 {
-  "name": "intelligentapp",
-  "version": "1.0.0",
-  "description": "",
+  "name": "intelligent-photo-app",
+  "version": "1.1.0",
+  "description": "A web service that uses Microsoft Cognitive Services Vision APIs to tag and describe images",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,23 @@
   "license": "ISC",
   "dependencies": {
     "express": "3.4.8",
-    "project-oxford": "^1.1.0",
     "socket.io": "^1.4.5"
+  },
+  "keywords": {
+    "cognitive services sample",
+    "computer vision",
+    "image recognition",
+    "image tagging",
+    "emotion detection",
+    "describe image",
+    "azure"
+},
+  "bugs": { 
+    "url" : "https://github.com/TED-Social/CognitiveServices-Samples/issues", 
+    "email" : "kehueb@microsoft.com"
+},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TED-Social/CognitiveServices-Samples"
   }
 }
